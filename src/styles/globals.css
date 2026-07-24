@@ -261,6 +261,8 @@ transition: 0.9s ease;
   padding: 200px 0;
 
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: 40px;
 }
