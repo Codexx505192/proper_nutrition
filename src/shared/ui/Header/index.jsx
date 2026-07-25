@@ -26,9 +26,9 @@ const [modalActive, setModalActive] = useState(true)
                 </Link>
             </li>
             <li>
-                <select id="" className="select_header">
-                    <option value="How It Works">How It Works</option>
-                </select>
+               <Link href="/Works" className="header_lnk">
+                How It  Works
+                </Link>
             </li>
              <li>
                 <Link href="#" className="header_lnk">
