@@ -1031,6 +1031,12 @@ font-size: 14px;
 text-decoration: underline;
 text-decoration-style: solid;
 color: #4D6C40;
+
+transition: 0.8s ease;
+}
+
+.lnk_4:hover{
+color: #45e400;
 }
 
 .txt_20{
@@ -1696,6 +1702,7 @@ color: #333333;
     font-size: 11px;
     text-decoration: underline;
 }
+
 }
 
 

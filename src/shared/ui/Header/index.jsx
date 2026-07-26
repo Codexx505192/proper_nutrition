@@ -68,9 +68,9 @@ const [modalActive, setModalActive] = useState(true)
                     </Link>
                 </li>
                 <li>
-                    <select id="">
-                        <option value="">How It Works</option>
-                    </select>
+                    <Link href="/Works" className="lnk_1">
+                    How It Works
+                    </Link>
                 </li>
             </ul>
             {/* <button className="header_button">
