@@ -1,0 +1,159 @@
+.menu_banner {
+    background-color: green;
+    justify-content: center;
+    align-items: center;
+    width: 1308px;
+    display: flex;
+}
+
+.menu_banner img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.heating_block{
+    background-color: orange;
+    padding: 20px  0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.menu_txt{
+padding: 0 0 40px;
+font-family: Stolzl;
+font-weight: 700;
+font-style: Bold;
+font-size: 36px;
+text-align: center;
+vertical-align: middle;
+color: #333333;
+}
+
+
+.menu_txt_2{
+padding: 0 0 50px;
+font-family: Stolzl;
+font-weight: 500;
+font-style: Medium;
+font-size: 18px;
+text-align: center;
+vertical-align: middle;
+color: #757575;
+}
+
+.menu_txt_5{
+padding: 40px 0 0;
+font-family: Stolzl;
+font-weight: 500;
+font-style: Medium;
+font-size: 18px;
+text-align: center;
+vertical-align: middle;
+color: #333333;
+}
+
+
+
+.heating_flex{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.heating_itm{
+width: 520px;
+height: 181px;
+border-radius: 10px;
+background-color: #FFFFFF;
+
+padding: 20px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+}
+
+
+
+.heating_icon{
+width: 73px;
+height: 73px;
+background-color: greenyellow;
+}
+
+
+.heating_icon img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.heating_left{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu_txt_3{
+padding: 0 0 27px;
+font-family: Stolzl;
+font-weight: 700;
+font-size: 18px;
+vertical-align: middle;
+color: #363333;
+}
+
+
+.menu_txt_4{
+font-family: Stolzl;
+font-weight: 400;
+font-size: 16px;
+vertical-align: middle;
+color: #666666;
+}
+
+
+@media(max-width: 1200px){
+.menu_banner {
+    width: 999px;
+    padding: 20px 0;
+}
+}
+
+
+@media(max-width: 992px){
+.menu_banner {
+    width: 720px;
+    padding: 20px 0;
+}
+}
+
+
+@media(max-width: 768px){
+.menu_banner {
+    width: 560px;
+    padding: 20px 0;
+}
+}
+
+
+@media(max-width: 576px){
+.menu_banner {
+    width: 577px;
+    /* padding: 20px 0; */
+}
+}
+
+
+
+@media(max-width: 375px){
+.menu_banner {
+    width: 374px;
+    /* padding: 20px 0; */
+}
+}

@@ -1,5 +1,6 @@
 import Header from "@/shared/ui/Header";
 import styles from "./Works.module.css"
+import Footer from "@/shared/ui/Footer";
 
 export default  function Works(){
     return(
@@ -249,14 +250,48 @@ export default  function Works(){
             </div>
         </section>
 
-        <section>
+        <section className={styles.wh}>
             <div className="container">
                 <div className={styles.why_block}>
                     <div className={styles.why_txt}>
+                        <div className={styles.why_txt_top}>
+                           <p className={styles.serve_txt_13}>
+                                Who We Serve?
+                           </p>
 
+                           <div className={styles.line}></div>
+                        </div>
+
+                        <p className={styles.serve_txt_11}>Why us?</p>
+                        <p className={styles.serve_txt_12}>
+                            Meals America is determined to provide good meals for those in <br />
+                            need and attempt to address the needs of the participants at  <br />
+                            home on long-term care, post-discharge and those with chronic   <br />
+                            home on long-term care, post-discharge and those with chronic   <br />
+                            and provide the best meal plans and a large menu with many  <br />
+                            options to choose from to fit any dietary need. We have variety  <br />
+                            of options from vegetarian to kosher, low-sodium, gluten-free,  <br />
+                            and many more. Our meals help those with health issues or injuries   <br />
+                            to make meal preparation easy and safe. We deliver straight to  <br />
+                            their doorstep each week. The meals get warmed up in the  <br />
+                            microwave and are ready to be served and enjoyed in minutes!    <br />
+                            Please, note that all referrals submitted by case managers and  <br />
+                            coordinators by 5:00 PM EST by Friday will be delivered the  <br />
+                            following week. Participant’s first delivery with include items from    <br />
+                            the first week of our standard menu unless we have special <br />
+                            request submitted along with the authorization.
+                        </p>
+                    </div>
+
+                    <div className={styles.why_r}>
+                      <img src="./work/best.png" alt="" />
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section>
+            <Footer/>
         </section>
         </>
     )

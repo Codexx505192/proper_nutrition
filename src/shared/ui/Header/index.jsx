@@ -31,7 +31,7 @@ const [modalActive, setModalActive] = useState(true)
                 </Link>
             </li>
              <li>
-                <Link href="#" className="header_lnk">
+                <Link href="/Menu" className="header_lnk">
                  Menu
                 </Link>
             </li>
@@ -58,7 +58,7 @@ const [modalActive, setModalActive] = useState(true)
                     </Link>
                 </li>
                 <li>
-                    <Link href="#" className="lnk_1">
+                    <Link href="/Menu" className="lnk_1">
                     Menu
                     </Link>
                 </li>
