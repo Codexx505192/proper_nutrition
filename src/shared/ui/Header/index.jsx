@@ -36,7 +36,7 @@ const [modalActive, setModalActive] = useState(true)
                 </Link>
             </li>
              <li>
-                <Link href="#" className="header_lnk">
+                <Link href="/contacts" className="header_lnk">
                  Contact
                 </Link>
             </li>
@@ -63,7 +63,7 @@ const [modalActive, setModalActive] = useState(true)
                     </Link>
                 </li>
                 <li>
-                    <Link href="#" className="lnk_1">
+                    <Link href="/contacts" className="lnk_1">
                     Contact
                     </Link>
                 </li>

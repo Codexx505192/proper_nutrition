@@ -1,10 +1,11 @@
 import Header from "@/shared/ui/Header";
 import styles from "./Menu.module.css"
+import Footer from "@/shared/ui/Footer";
 
 export default function Menu(){
     return(
         <>
-        <section>
+        <section className={styles.menu_back}>
             <Header/>
             <div className="container">
                 <div className={styles.menu_banner}>
@@ -13,7 +14,7 @@ export default function Menu(){
             </div>
         </section>
 
-        <section>
+        <section className={styles.menu_back}>
             <div className="container">
                   <div className={styles.menu_banner}>
                    <img src="./menu/menu_2.svg" alt="" />
@@ -21,7 +22,7 @@ export default function Menu(){
             </div>
         </section>
 
-        <section>
+        <section className={styles.white}>
             <div className="container">
                 <div className={styles.heating_block}>
                    <p className={styles.menu_txt}>HEATING INSTRUCTIONS:</p>
@@ -64,6 +65,10 @@ export default function Menu(){
                    <p className={styles.menu_txt_5}>Occasionally, any meal delivered may be substituted without notice based on product availability.</p>
                 </div>
             </div>
+        </section>
+
+        <section>
+            <Footer/>
         </section>
         </>
     )
