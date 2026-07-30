@@ -6,6 +6,7 @@ import Modal from "../Modal/Modal";
 export default function Header(){
 const [openMenu, setOpenMenu] = useState(false)
 const [modalActive, setModalActive] = useState(true)
+const [formModal, setFormModal]  = useState(false)
 
     return(
         <header className="header">
@@ -19,7 +20,7 @@ const [modalActive, setModalActive] = useState(true)
          </div>
          </div>
 
-         <ul className="header_list">
+         <ul className={`header_list ${formModal ? "active" : ""}`}>
             <li>
                 <Link href="/AboutUs" className="header_lnk">
                 About us
@@ -42,7 +43,10 @@ const [modalActive, setModalActive] = useState(true)
             </li>
          </ul>
 
-         <button className="header_btn" onClick={() => setModalActive(true)}>
+            <div className="mdal_frm">
+
+            </div>
+         <button className="header_btn" onClick={() => setFormModal(true)}>
             Get Started
          </button>
 

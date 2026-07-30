@@ -139,25 +139,25 @@ const [modalActive, setModalActive] = useState(true)
                    <div className="bnr_ul">
                      <ul className="list">
                       <li className="li">
-                           <label class="custom-checkbox">
+                           <label className="custom-checkbox">
                             <input type="checkbox"/>
-                            <span class="checkmark"></span>
+                            <span className="checkmark"></span>
                              Gluten free options
                             </label>
                       </li>
 
                        <li className="li">
-                           <label class="custom-checkbox">
+                           <label className="custom-checkbox">
                             <input type="checkbox"/>
-                            <span class="checkmark"></span>
+                            <span className="checkmark"></span>
                              Exact calorie content
                             </label>
                       </li>
 
                        <li className="li">
-                           <label class="custom-checkbox">
+                           <label className="custom-checkbox">
                             <input type="checkbox"/>
-                            <span class="checkmark"></span>
+                            <span className="checkmark"></span>
                              Improves health
                             </label>
                       </li>

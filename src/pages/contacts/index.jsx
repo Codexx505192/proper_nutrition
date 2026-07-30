@@ -1,8 +1,29 @@
 import Header from "@/shared/ui/Header";
 import styles from "./cont.module.css"
 import Footer from "@/shared/ui/Footer";
+import { useState } from "react";
+import BntForm from "@/shared/ui/BntForm";
 
 export default function Page(){
+
+// const [name, setName] = useState("")
+// const [reason, setReason]  = useState("Tell us about your needs")
+// const [hesError, setHesError] = useState(true)
+const [form, setForm] = useState({
+  name: "",
+  reason: "Tell us about your needs",
+  hesError: true
+})
+function handleNameChange(event){
+// setName(event.target.value)
+// setHesError(event.target.value.trim().length == 0)
+setForm((prev) => ({
+  ...prev,
+  name: event.target.value,
+  hesError: event.target.value.trim().length == 0
+}))
+}
+
     return(
         <>
         <section className={styles.white}>
@@ -72,51 +93,98 @@ export default function Page(){
                         <div className={styles.itm_flx}>
                         <div className={styles.inp_itm}>
                         <span className={styles.frm_txt}>Name</span>
-                        <input type="text" required/>
+                        <input type="text"
+                        required value={form.name}
+                        onChange={handleNameChange}
+                        style={{
+                          border: form.hesError? "1px solid red":null
+                        }}
+                        />
+                        
                        </div>
 
                           <div className={styles.inp_itm}>
                         <span className={styles.frm_txt}>E-mail Address</span>
-                        <input type="email"/>
+                        <input type="email"
+                         style={{border: form.hesError?"1px solid red":null}}/>
                        </div>
 
                         <div className={styles.inp_itm}>
                         <span className={styles.frm_txt}>County</span>
-                        <input type="text" required/>
+                        <input type="text"
+                         required
+                          style={{
+                            border: form.hesError?"1px solid red":null
+                          }}/>
                        </div>
                        </div>
                         
                         <div className={styles.itm_flx}>
                         <div className={styles.inp_itm}>
                         <span className={styles.frm_txt}>Organization</span>
-                        <input type="text"/>
+                        <input
+                         type="text"
+                         style={{
+                          border: form.hesError?"1px solid red":null
+                         }}
+                        />
                        </div>
 
                           <div className={styles.inp_itm}>
                         <span className={styles.frm_txt}>City</span>
-                        <input type="text" required/>
+                        <input
+                         type="text"
+                          required
+                          style={{
+                            border: form.hesError?"1px solid red":null
+                          }}
+                          />
                        </div>
 
                         <div className={styles.inp_itm}>
                         <span className={styles.frm_txt}>Zip Code</span>
-                        <input type="text" required/>
+                        <input
+                         type="text"
+                          required
+                          style={{
+                            border: form.hesError?"1px solid red":null
+                          }}
+                          />
                        </div>
                        </div>
 
                        <div className={styles.itm_flx}>
                         <div className={styles.inp_itm}>
                         <span className={styles.frm_txt}>Phone Number</span>
-                        <input type="text" required/>
+                        <input
+                         type="text"
+                          required
+                          style={{
+                            border: form.hesError?"1px solid red":null
+                          }}
+                          />
                        </div>
 
                           <div className={styles.inp_itm}>
                         <span className={styles.frm_txt}>State</span>
-                        <input type="text" required/>
+                        <input
+                         type="text"
+                          required
+                          style={{
+                            border: form.hesError?"1px solid red":null
+                          }}
+                          />
                        </div>
 
                         <div className={styles.inp_itm}>
                         <span className={styles.frm_txt}>Name</span>
-                        <select id="" className={styles.slct}>
+                        <select 
+                        id="" 
+                        className={styles.slct}
+                         value={form.reason} 
+                         onChange={event => setForm((prev) => ({...prev, reason: event.target.value}))}
+                         
+                         >
                           <option required value="Tell us about your needs">-Tell us about your needs-</option>
                         </select>
                        </div>
@@ -130,9 +198,11 @@ export default function Page(){
 
 
                      <div className={styles.btn_block_bottom}>
-                       <button className={styles.btn_form}>
+                       {/* <button className={styles.btn_form}>
                            Sumbit
-                       </button>
+                       </button> */}
+
+                       <BntForm disabled={form.hesError}>Sumbit</BntForm>
                      </div>
                     </form>
                    </div>

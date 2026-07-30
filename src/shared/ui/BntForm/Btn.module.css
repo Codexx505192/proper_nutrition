@@ -1,0 +1,23 @@
+.btn_form{
+border: none;
+width: 200px;
+height: 55px;
+border-radius: 80px;
+cursor: pointer;
+background-color: #05581C;
+
+font-family: Stolzl;
+font-weight: 700;
+font-style: Bold;
+font-size: 16px;
+text-transform: uppercase;
+color: #FFFFFF;
+transition: 0.9s ease;
+}
+
+
+
+.btn_form:disabled{
+    background-color: rgb(195, 193, 193);
+    cursor: not-allowed;
+}
