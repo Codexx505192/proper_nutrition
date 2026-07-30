@@ -185,6 +185,7 @@ border-radius: 10px;
 border: 1px solid #B5D2BD;
 background-color: #FFFFFF;
 margin-bottom: 40px;
+padding: 20px;
 }
 
 .ar textarea{
@@ -283,20 +284,17 @@ display: flex;
 }
 
 
-/* .slct {
-    width: 200px;
+.inp_itm {
+    width: 190px;
     height: 80px;
-} */
+}
 
 
 .slct {
     width: 178px;
     height: 80px;
-}
-
-.inp_itm {
-    width: 190px;
-    height: 80px;
+    font-size: 12px;
+    padding-left: 4px;
 }
 }
 
